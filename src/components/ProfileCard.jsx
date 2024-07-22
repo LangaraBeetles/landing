@@ -4,7 +4,7 @@ import Card from "./ui/Card";
 const ProfileCard = ({ member }) => {
   return (
     <div>
-      <Card className=" bg-yellow-50">
+      <Card bg="bg-yellow-50" rounded="rounded-md">
         <img src={member.img} alt="pooja" />
       </Card>
       <p>{member.name}</p>

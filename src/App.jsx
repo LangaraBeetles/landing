@@ -8,12 +8,13 @@ import Nav from "./components/Nav";
 import AppStore from "./assets/images/AppStore.svg";
 import GooglePlay from "./assets/images/GooglePlay.svg";
 import TeamMembers from "./components/lists/TeamMembers";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="p-4">
       <section>
-        <Card className=" bg-gradient-to-b from-yellow-100 to-yellow-200">
+        <Card bg=" bg-gradient-to-b from-yellow-100 to-yellow-200">
           <Nav />
           <div className="flex flex-col gap-6">
             <div className="p-2 text-center flex flex-col gap-3">
@@ -39,7 +40,7 @@ function App() {
       </div>
 
       <section>
-        <Card className=" bg-yellow-50">
+        <Card bg=" bg-yellow-50">
           <div className="flex flex-col gap-6">
             <div className="px-6 pt-8 flex flex-col gap-3">
               <h1 className="text-xl">Meet the cute weasel</h1>
@@ -52,7 +53,7 @@ function App() {
           </div>
         </Card>
 
-        <Card className=" bg-coral-50">
+        <Card bg=" bg-coral-50">
           <div className="flex flex-col gap-6">
             <div className="px-6 pt-8 flex flex-col gap-3">
               <h1 className="text-xl">Challenge Your Friends!</h1>
@@ -65,7 +66,7 @@ function App() {
           </div>
         </Card>
 
-        <Card className=" bg-baltic-green-50">
+        <Card bg=" bg-baltic-green-50">
           <div className="flex flex-col gap-6">
             <div className="px-6 pt-8 flex flex-col gap-3">
               <h1 className="text-xl">
@@ -80,7 +81,7 @@ function App() {
           </div>
         </Card>
 
-        <Card className=" bg-coral-50">
+        <Card bg=" bg-coral-50">
           <div className="flex flex-col gap-6">
             <div className="px-6 pt-8 flex flex-col gap-3">
               <h1 className="text-xl">Analytics</h1>
@@ -94,7 +95,7 @@ function App() {
           </div>
         </Card>
 
-        <Card className=" bg-yellow-50">
+        <Card bg=" bg-yellow-50">
           <div className="flex flex-col gap-6">
             <div className="px-6 pt-8 flex flex-col gap-3">
               <h1 className="text-xl">Set daily goals</h1>
@@ -117,6 +118,8 @@ function App() {
         <TeamMembers type={"Designer"} />
         <TeamMembers type={"Developer"} />
       </section>
+
+      <Footer />
     </div>
   );
 }

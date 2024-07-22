@@ -3,6 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
+      white: "#FFFFFF",
       yellow: { 50: "#FFF8E6", 100: "#FDD462", 200: "#FFCD43" },
       neutral: { 800: "#201F1D" },
       coral: { 50: "#FFF0F0" },
@@ -16,7 +17,8 @@ export default {
     borderRadius: {
       DEFAULT: "1.25rem",
       md: "1rem",
-      lg: "6.25rem",
+      lg: "1.75rem",
+      xl: "6.25rem",
     },
     fontFamily: {
       Nunito: ["Nunito", "sans-serif"],
