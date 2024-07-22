@@ -116,7 +116,7 @@ function App() {
       </section>
 
       <div className="px-4 py-12 text-center">
-        <h2 className="text-2xl">Discover WeaUp&apos;s Unique Features</h2>
+        <h2 className="text-2xl">The team behind WeaUp</h2>
         <p className="text-sm px-1">Meet the team that brought WeaUp to life</p>
       </div>
 
