@@ -1,3 +1,30 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/src/assets/fonts/NunitoRegular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/src/assets/fonts/NunitoBold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    src: url(/src/assets/fonts/NunitoExtraBold.ttf) format("truetype");
+  }
+
+  html {
+    font-family: "Nunito", sans-serif;
+  }
+}
