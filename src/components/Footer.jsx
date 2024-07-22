@@ -1,5 +1,5 @@
 import Card from "./ui/Card";
-import FooterLogo from "../assets/images/FooterLogo.svg";
+import FooterLogo from "../assets/images/FooterLogo.png";
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
       </h2>
 
       <div className="flex justify-center">
-        <p className="text-white text-center border-t block w-fit pt-6">
+        <p className="text-white text-center border-t block w-fit pt-6 opacity-60">
           © 2024 WeaUp. All rights reserved.
         </p>
       </div>

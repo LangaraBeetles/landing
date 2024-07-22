@@ -3,12 +3,18 @@ import "./App.css";
 // Components
 import Card from "./components/ui/Card";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 // Images
 import AppStore from "./assets/images/AppStore.svg";
 import GooglePlay from "./assets/images/GooglePlay.svg";
 import TeamMembers from "./components/lists/TeamMembers";
-import Footer from "./components/Footer";
+import HeroImage from "./assets/images/body/hero section.png";
+import WeaselImage from "./assets/images/body/Meet the cute weasel.png";
+import ChallengeImage from "./assets/images/body/Challenge Your Friends!.png";
+import FunImage from "./assets/images/body/Make Posture ImprovementFun and Rewarding.png";
+import AnalyticsImage from "./assets/images/body/Analytics.png";
+import DailyGoalsImage from "./assets/images/body/Set daily goals.png";
 
 function App() {
   return (
@@ -28,7 +34,7 @@ function App() {
               <img src={AppStore} alt="Download on the AppStore" />
               <img src={GooglePlay} alt="Get it on GooglePlay" />
             </div>
-            <img src="https://placehold.co/200" alt="" />
+            <img src={HeroImage} alt="hero image" className="px-3" />
           </div>
         </Card>
       </section>
@@ -49,7 +55,7 @@ function App() {
                 in real-time depending on your neck posture.
               </p>
             </div>
-            <img src="https://placehold.co/200" alt="" />
+            <img src={WeaselImage} alt="hero image" className="px-3" />
           </div>
         </Card>
 
@@ -62,7 +68,7 @@ function App() {
                 support each other in achieving better posture.
               </p>
             </div>
-            <img src="https://placehold.co/200" alt="" />
+            <img src={ChallengeImage} alt="hero image" className="px-3" />
           </div>
         </Card>
 
@@ -77,7 +83,7 @@ function App() {
                 support each other in achieving better posture.
               </p>
             </div>
-            <img src="https://placehold.co/200" alt="" />
+            <img src={FunImage} alt="hero image" className="px-3" />
           </div>
         </Card>
 
@@ -91,7 +97,7 @@ function App() {
                 achieve your posture goals effectively.
               </p>
             </div>
-            <img src="https://placehold.co/200" alt="" />
+            <img src={AnalyticsImage} alt="hero image" className="px-3" />
           </div>
         </Card>
 
@@ -104,7 +110,7 @@ function App() {
                 posture habits each day.
               </p>
             </div>
-            <img src="https://placehold.co/200" alt="" />
+            <img src={DailyGoalsImage} alt="hero image" className="px-3" />
           </div>
         </Card>
       </section>
