@@ -45,7 +45,7 @@ function App() {
         </h2>
       </div>
 
-      <section>
+      <section className="grid gap-10">
         <Card bg=" bg-yellow-50">
           <div className="flex flex-col gap-6">
             <div className="px-6 pt-8 flex flex-col gap-3">
@@ -120,7 +120,7 @@ function App() {
         <p className="text-sm px-1">Meet the team that brought WeaUp to life</p>
       </div>
 
-      <section>
+      <section className="flex flex-col gap-20">
         <TeamMembers type={"Designer"} />
         <TeamMembers type={"Developer"} />
       </section>

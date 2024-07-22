@@ -3,7 +3,7 @@ import FooterLogo from "../assets/images/FooterLogo.png";
 
 const Footer = () => {
   return (
-    <Card bg="bg-neutral-800" rounded="rounded-lg" p="px-6 py-20">
+    <Card bg="bg-neutral-800" rounded="rounded-lg" p="px-6 py-20 mt-20">
       <div className="flex justify-center">
         <img src={FooterLogo} alt="WeaUp logo" />
       </div>

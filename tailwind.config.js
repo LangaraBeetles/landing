@@ -26,6 +26,14 @@ export default {
 
     extend: {
       fontSize: {
+        m: [
+          "1.25rem",
+          {
+            lineHeight: "1.75rem",
+            fontWeight: "700",
+            fontFamily: "Nunito",
+          },
+        ],
         xl: [
           "1.5rem",
           {
