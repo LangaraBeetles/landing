@@ -1,5 +1,5 @@
 import Card from "./ui/Card";
-import FooterLogo from "../assets/images/FooterLogo.png";
+import FooterLogo from "../assets/images/FooterLogo.svg";
 
 const Footer = () => {
   return (
