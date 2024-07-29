@@ -1,19 +1,19 @@
 const routes = [
   {
     title: "About",
-    href: "#",
+    href: "#About",
   },
   {
     title: "Features",
-    href: "#",
+    href: "#Features",
   },
   {
     title: "Team",
-    href: "#",
+    href: "#Team",
   },
   {
     title: "Contact Us",
-    href: "#",
+    href: "mailto:beetleslangara@gmail.com",
   },
 ];
 

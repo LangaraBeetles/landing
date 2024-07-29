@@ -7,6 +7,8 @@ import Reinhardt from "./assets/images/headshots/rein.png";
 import Victor from "./assets/images/headshots/victor.png";
 import Wonnyo from "./assets/images/headshots/wonnyo.png";
 
+// TODO: update linkedin and website links
+
 const team = [
   {
     name: "Pooja Chauhan",

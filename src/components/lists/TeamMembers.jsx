@@ -11,7 +11,7 @@ const TeamMembers = ({ type }) => {
       <div className="pb-6">
         <Chip label={type === "Designer" ? "DESIGNERS" : "DEVELOPERS"} />
       </div>
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-16 md:flex-row">
         {filteredTeam.map((member) => (
           <ProfileCard key={member.name} member={member} />
         ))}

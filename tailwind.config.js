@@ -9,6 +9,7 @@ export default {
       coral: { 50: "#FFF0F0" },
       "baltic-green": {
         50: "#F0F9F9",
+        200: "#C1E7E3",
         600: "#3AA199",
         700: "#2F7973",
         800: "#20514D",
@@ -26,6 +27,14 @@ export default {
 
     extend: {
       fontSize: {
+        s: [
+          "1rem",
+          {
+            lineHeight: "1.4rem",
+            fontWeight: "700",
+            fontFamily: "Nunito",
+          },
+        ],
         m: [
           "1.25rem",
           {
@@ -54,6 +63,22 @@ export default {
           "2rem",
           {
             lineHeight: "2.4rem",
+            fontWeight: "800",
+            fontFamily: "Nunito",
+          },
+        ],
+        "3xl-l": [
+          "2rem",
+          {
+            lineHeight: "2.4rem",
+            fontWeight: "700",
+            fontFamily: "Nunito",
+          },
+        ],
+        "4xl": [
+          "3.5rem",
+          {
+            lineHeight: "4.2rem",
             fontWeight: "800",
             fontFamily: "Nunito",
           },

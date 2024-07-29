@@ -15,42 +15,53 @@ import ChallengeImage from "./assets/images/body/Challenge Your Friends!.png";
 import FunImage from "./assets/images/body/Make Posture ImprovementFun and Rewarding.png";
 import AnalyticsImage from "./assets/images/body/Analytics.png";
 import DailyGoalsImage from "./assets/images/body/Set daily goals.png";
+import CheckCircle from "./assets/images/icons/CheckCircle.svg";
 
 function App() {
   return (
-    <div className="p-4">
-      <section>
+    <div className="p-4 lg:max-w-[87rem] lg:mx-auto">
+      <section id="About">
         <Card bg=" bg-gradient-to-b from-yellow-100 to-yellow-200">
           <Nav />
           <div className="flex flex-col gap-6">
             <div className="p-2 text-center flex flex-col gap-3">
-              <h1 className="text-3xl">Transform Your Posture with WeaUp!</h1>
-              <p className="text-sm px-1">
+              <h1 className="text-3xl md:text-4xl">
+                Transform Your Posture with WeaUp!
+              </h1>
+              <p className="text-sm px-1 md:text-base">
                 Say goodbye to neck pain and hello to better health. Improve
                 your posture with WeaUp!
               </p>
             </div>
             <div className="flex gap-2 justify-center">
-              <img src={AppStore} alt="Download on the AppStore" />
-              <img src={GooglePlay} alt="Get it on GooglePlay" />
+              <img
+                src={AppStore}
+                className="lg:h-[2.58331rem] lg:w-[8.84294rem] h-8"
+                alt="Download on the AppStore"
+              />
+              <img
+                src={GooglePlay}
+                className="lg:h-[2.58331rem] lg:w-[8.84294rem] h-8"
+                alt="Get it on GooglePlay"
+              />
             </div>
             <img src={HeroImage} alt="hero image" className="px-3" />
           </div>
         </Card>
       </section>
 
-      <div>
+      <div id="Features">
         <h2 className="text-2xl px-4 py-12 text-center">
           Discover WeaUp&apos;s Unique Features
         </h2>
       </div>
 
-      <section className="grid gap-10">
-        <Card bg=" bg-yellow-50">
-          <div className="flex flex-col gap-6">
-            <div className="px-6 pt-8 flex flex-col gap-3">
-              <h1 className="text-xl">Meet the cute weasel</h1>
-              <p className="text-sm px-1">
+      <section className="grid gap-10 md:grid-cols-3">
+        <Card bg=" bg-yellow-50 md:max-h-[35rem]">
+          <div className="flex flex-col gap-6 md:justify-between md:h-full">
+            <div className="px-6 pt-8 flex flex-col gap-3 md:flex-grow">
+              <h3 className="text-xl md:text-3xl-l">Meet the cute weasel</h3>
+              <p className="text-sm px-1 md:text-base">
                 Have fun keeping your neck in good posture with Weabo who reacts
                 in real-time depending on your neck posture.
               </p>
@@ -59,11 +70,11 @@ function App() {
           </div>
         </Card>
 
-        <Card bg=" bg-coral-50">
-          <div className="flex flex-col gap-6">
-            <div className="px-6 pt-8 flex flex-col gap-3">
-              <h1 className="text-xl">Challenge Your Friends!</h1>
-              <p className="text-sm px-1">
+        <Card bg=" bg-coral-50 md:col-span-2 md:max-h-[35rem] overflow-hidden">
+          <div className="flex flex-col gap-6 md:justify-between md:h-full">
+            <div className="px-6 pt-8 flex flex-col gap-3 md:flex-grow">
+              <h3 className="text-xl md:text-3xl-l">Challenge Your Friends!</h3>
+              <p className="text-sm px-1 md:text-base">
                 Set common goals with your friends, compete in challenges, and
                 support each other in achieving better posture.
               </p>
@@ -72,26 +83,58 @@ function App() {
           </div>
         </Card>
 
-        <Card bg=" bg-baltic-green-50">
-          <div className="flex flex-col gap-6">
+        <Card bg=" bg-baltic-green-50 md:col-span-3 md:max-h-[35rem]">
+          <div className="flex flex-col gap-6 md:flex-row">
             <div className="px-6 pt-8 flex flex-col gap-3">
-              <h1 className="text-xl">
+              <h3 className="text-xl md:text-3xl-l">
                 Make Posture Improvement Fun and Rewarding
-              </h1>
-              <p className="text-sm px-1">
-                Set common goals with your friends, compete in challenges, and
-                support each other in achieving better posture.
-              </p>
+              </h3>
+              <div className="flex flex-col gap-8">
+                <div className="flex gap-2">
+                  <img src={CheckCircle} alt="check" className="h-max" />
+                  <div>
+                    <h4 className="text-s px-1">Challenge Yourself</h4>
+                    <p className="text-sm px-1 md:text-base">
+                      Push your limits and earn rewards as you progress.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <img src={CheckCircle} alt="check" className="h-max" />
+                  <div>
+                    <h4 className="text-s px-1">Stay Motivated</h4>
+                    <p className="text-sm px-1 md:text-base">
+                      Track your achievements and celebrate your successes with
+                      friends.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <img src={CheckCircle} alt="check" className="h-max" />
+                  <div>
+                    <h4 className="text-s px-1">Build Healthy Habits</h4>
+                    <p className="text-sm px-1 md:text-base">
+                      Use gamification to develop and maintain better posture
+                      habits.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <img src={FunImage} alt="hero image" className="px-3" />
+
+            <img
+              src={FunImage}
+              alt="hero image"
+              className="px-3 md:max-w-[36.82556rem]"
+            />
           </div>
         </Card>
 
-        <Card bg=" bg-coral-50">
+        <Card bg=" bg-coral-50 md:col-span-2 md:max-h-[35rem] overflow-hidden">
           <div className="flex flex-col gap-6">
             <div className="px-6 pt-8 flex flex-col gap-3">
-              <h1 className="text-xl">Analytics</h1>
-              <p className="text-sm px-1">
+              <h3 className="text-xl md:text-3xl-l">Analytics</h3>
+              <p className="text-sm px-1 md:text-base">
                 Gain insights into your posture habits over time. Track your
                 progress, understand trends, and make informed adjustments to
                 achieve your posture goals effectively.
@@ -101,11 +144,11 @@ function App() {
           </div>
         </Card>
 
-        <Card bg=" bg-yellow-50">
-          <div className="flex flex-col gap-6">
-            <div className="px-6 pt-8 flex flex-col gap-3">
-              <h1 className="text-xl">Set daily goals</h1>
-              <p className="text-sm px-1">
+        <Card bg=" bg-yellow-50 md:max-h-[35rem]">
+          <div className="flex flex-col gap-6 md:justify-between md:h-full">
+            <div className="px-6 pt-8 flex flex-col gap-3 md:flex-grow">
+              <h3 className="text-xl md:text-3xl-l">Set daily goals</h3>
+              <p className="text-sm px-1 md:text-base">
                 Daily goals help you track progress and maintain healthier
                 posture habits each day.
               </p>
@@ -115,9 +158,11 @@ function App() {
         </Card>
       </section>
 
-      <div className="px-4 py-12 text-center">
+      <div className="px-4 py-12 text-center" id="Team">
         <h2 className="text-2xl">The team behind WeaUp</h2>
-        <p className="text-sm px-1">Meet the team that brought WeaUp to life</p>
+        <p className="text-sm px-1 md:text-base">
+          Meet the team that brought WeaUp to life
+        </p>
       </div>
 
       <section className="flex flex-col gap-20">
