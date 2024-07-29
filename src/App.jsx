@@ -21,10 +21,10 @@ function App() {
   return (
     <div className="p-4 lg:max-w-[87rem] lg:mx-auto">
       <section id="About">
-        <Card bg=" bg-gradient-to-b from-yellow-100 to-yellow-200">
+        <Card bg=" bg-gradient-to-b from-yellow-100 to-yellow-200 lg:relative">
           <Nav />
-          <div className="flex flex-col gap-6">
-            <div className="p-2 text-center flex flex-col gap-3">
+          <div className="flex flex-col gap-6 lg:absolute lg:inset-x-0">
+            <div className="p-2 text-center flex flex-col gap-3 lg:max-w-[46%] lg:mx-auto">
               <h1 className="text-3xl md:text-4xl">
                 Transform Your Posture with WeaUp!
               </h1>
@@ -45,8 +45,8 @@ function App() {
                 alt="Get it on GooglePlay"
               />
             </div>
-            <img src={HeroImage} alt="hero image" className="px-3" />
           </div>
+          <img src={HeroImage} alt="hero image" className="px-3 pt-14" />
         </Card>
       </section>
 
