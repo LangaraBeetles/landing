@@ -51,7 +51,7 @@ function App() {
       </section>
 
       <div id="Features">
-        <h2 className="text-2xl px-4 py-12 text-center">
+        <h2 className="text-2xl px-4 py-12 text-center lg:text-2xl-l lg:pt-28 lg:pb-20">
           Discover WeaUp&apos;s Unique Features
         </h2>
       </div>
@@ -85,7 +85,7 @@ function App() {
 
         <Card bg=" bg-baltic-green-50 md:col-span-3 md:max-h-[35rem]">
           <div className="flex flex-col gap-6 md:flex-row">
-            <div className="px-6 pt-8 flex flex-col gap-3">
+            <div className="px-6 pt-8 flex flex-col gap-3 lg:gap-8">
               <h3 className="text-xl md:text-3xl-l">
                 Make Posture Improvement Fun and Rewarding
               </h3>
@@ -93,7 +93,9 @@ function App() {
                 <div className="flex gap-2">
                   <img src={CheckCircle} alt="check" className="h-max" />
                   <div>
-                    <h4 className="text-s px-1">Challenge Yourself</h4>
+                    <h4 className="text-s px-1 lg:text-s-l">
+                      Challenge Yourself
+                    </h4>
                     <p className="text-sm px-1 md:text-base">
                       Push your limits and earn rewards as you progress.
                     </p>
@@ -102,7 +104,7 @@ function App() {
                 <div className="flex gap-2">
                   <img src={CheckCircle} alt="check" className="h-max" />
                   <div>
-                    <h4 className="text-s px-1">Stay Motivated</h4>
+                    <h4 className="text-s px-1 lg:text-s-l">Stay Motivated</h4>
                     <p className="text-sm px-1 md:text-base">
                       Track your achievements and celebrate your successes with
                       friends.
@@ -112,7 +114,9 @@ function App() {
                 <div className="flex gap-2">
                   <img src={CheckCircle} alt="check" className="h-max" />
                   <div>
-                    <h4 className="text-s px-1">Build Healthy Habits</h4>
+                    <h4 className="text-s px-1 lg:text-s-l">
+                      Build Healthy Habits
+                    </h4>
                     <p className="text-sm px-1 md:text-base">
                       Use gamification to develop and maintain better posture
                       habits.
@@ -159,8 +163,10 @@ function App() {
       </section>
 
       <div className="px-4 py-12 text-center" id="Team">
-        <h2 className="text-2xl">The team behind WeaUp</h2>
-        <p className="text-sm px-1 md:text-base">
+        <h2 className="text-2xl lg:text-2xl-l lg:pt-28 lg:pb-4">
+          The team behind WeaUp
+        </h2>
+        <p className="text-sm px-1 md:text-base lg:pb-16">
           Meet the team that brought WeaUp to life
         </p>
       </div>

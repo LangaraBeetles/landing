@@ -35,6 +35,14 @@ export default {
             fontFamily: "Nunito",
           },
         ],
+        "s-l": [
+          "1.125rem",
+          {
+            lineHeight: "1.575rem",
+            fontWeight: "700",
+            fontFamily: "Nunito",
+          },
+        ],
         m: [
           "1.25rem",
           {
@@ -55,6 +63,14 @@ export default {
           "1.75rem",
           {
             lineHeight: "2.1rem",
+            fontWeight: "700",
+            fontFamily: "Nunito",
+          },
+        ],
+        "2xl-l": [
+          "2.5rem",
+          {
+            lineHeight: "3rem",
             fontWeight: "700",
             fontFamily: "Nunito",
           },
