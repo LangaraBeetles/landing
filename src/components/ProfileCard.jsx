@@ -14,7 +14,7 @@ const ProfileCard = ({ member }) => {
           <img src={member.img} alt="pooja" />
         </div>
       </Card>
-      <p className="pt-6 pb-3 text-m">{member.name}</p>
+      <p className="pt-6 pb-3 text-m notranslate">{member.name}</p>
       <div className="flex gap-3">
         <a href={member.linkedin}>
           <img src={Linkedin} alt="Linkedin profile" />
