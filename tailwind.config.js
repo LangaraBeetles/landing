@@ -5,7 +5,7 @@ export default {
     colors: {
       white: "#FFFFFF",
       yellow: { 50: "#FFF8E6", 100: "#FDD462", 200: "#FFCD43" },
-      neutral: { 100: "#E7E5E4", 800: "#201F1D" },
+      neutral: { 100: "#E7E5E4", 500: "#5F5C56", 800: "#201F1D" },
       coral: { 50: "#FFF0F0" },
       "baltic-green": {
         50: "#F0F9F9",
@@ -40,6 +40,14 @@ export default {
           {
             lineHeight: "1.575rem",
             fontWeight: "700",
+            fontFamily: "Nunito",
+          },
+        ],
+        "s-l2": [
+          "1.125rem",
+          {
+            lineHeight: "1.5rem",
+            fontWeight: "500",
             fontFamily: "Nunito",
           },
         ],

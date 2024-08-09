@@ -12,8 +12,8 @@ const routes = [
     href: "#Team",
   },
   {
-    title: "Contact Us",
-    href: "mailto:beetleslangara@gmail.com",
+    title: "View Proposal",
+    href: "WeaUp_ProjectProposal.pdf",
   },
 ];
 

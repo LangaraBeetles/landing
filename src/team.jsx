@@ -13,6 +13,7 @@ const team = [
     role: "Designer",
     linkedin: "https://www.linkedin.com/in/poojachauhan21",
     website: "https://poojach.com",
+    title: "Lead UI/UX Designer",
     img: Pooja,
   },
   {
@@ -20,6 +21,7 @@ const team = [
     role: "Designer",
     linkedin: "https://www.linkedin.com/in/jialicjl",
     website: "https://jia-li.com",
+    title: "UI/UX Designer | Illustrator",
     img: Jiali,
   },
   {
@@ -27,6 +29,7 @@ const team = [
     role: "Designer",
     linkedin: "https://www.linkedin.com/in/andersonmarquesoli",
     website: "https://andersonmarquesoliveira.com",
+    title: "UI/UX Designer",
     img: Anderson,
   },
   {
@@ -34,6 +37,7 @@ const team = [
     role: "Designer",
     linkedin: "https://www.linkedin.com/in/adrian-cheukyan-li",
     website: "https://adriancyli.com",
+    title: "UI/UX Designer | Animator",
     img: Adrian,
   },
   {
@@ -41,6 +45,7 @@ const team = [
     role: "Developer",
     linkedin: "https://www.linkedin.com/in/wonnyo",
     website: "https://github.com/whamester",
+    title: "Lead Full-Stack Developer",
     img: Wonnyo,
   },
   {
@@ -48,6 +53,7 @@ const team = [
     role: "Developer",
     linkedin: "https://www.linkedin.com/in/wrbotha",
     website: "https://github.com/ReinhardtBotha",
+    title: "Full-Stack Developer | PM",
     img: Reinhardt,
   },
   {
@@ -55,6 +61,7 @@ const team = [
     role: "Developer",
     linkedin: "https://www.linkedin.com/in/bethleen-baral",
     website: "https://github.com/zeckkimon",
+    title: "Full-Stack Developer",
     img: Beck,
   },
   {
@@ -62,6 +69,7 @@ const team = [
     role: "Developer",
     linkedin: "https://www.linkedin.com/in/victor-portus",
     website: "https://github.com/Victorportus",
+    title: "Full-Stack Developer",
     img: Victor,
   },
 ];

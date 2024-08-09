@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="p-4 lg:max-w-[87rem] lg:mx-auto">
       <section id="About">
-        <Card bg=" bg-gradient-to-b from-yellow-100 to-yellow-200 lg:relative">
+        <Card bg="bg-gradient-to-b from-yellow-100 to-yellow-200 lg:relative lg:px-12 lg:pt-12">
           <Nav />
           <div className="flex flex-col gap-6 lg:absolute lg:inset-x-0">
             <div className="p-2 text-center flex flex-col gap-3 lg:max-w-[46%] lg:mx-auto">
@@ -56,8 +56,8 @@ function App() {
         </h2>
       </div>
 
-      <section className="grid gap-10 md:grid-cols-3">
-        <Card bg=" bg-yellow-50 md:max-h-[35rem]">
+      <section className="grid gap-10 md:grid-cols-5 md:px-14">
+        <Card bg=" bg-yellow-50 md:col-span-2 md:max-h-[35rem]">
           <div className="flex flex-col gap-6 md:justify-between md:h-full">
             <div className="px-6 pt-8 flex flex-col gap-3 md:flex-grow">
               <h3 className="text-xl md:text-3xl-l">Meet the cute weasel</h3>
@@ -70,7 +70,7 @@ function App() {
           </div>
         </Card>
 
-        <Card bg=" bg-coral-50 md:col-span-2 md:max-h-[35rem] overflow-hidden">
+        <Card bg=" bg-coral-50 md:col-span-3 md:max-h-[35rem] overflow-hidden">
           <div className="flex flex-col gap-6 md:justify-between md:h-full">
             <div className="px-6 pt-8 flex flex-col gap-3 md:flex-grow">
               <h3 className="text-xl md:text-3xl-l">Challenge Your Friends!</h3>
@@ -83,7 +83,7 @@ function App() {
           </div>
         </Card>
 
-        <Card bg=" bg-baltic-green-50 md:col-span-3 md:max-h-[35rem]">
+        <Card bg=" bg-baltic-green-50 md:col-span-5 md:max-h-[35rem]">
           <div className="flex flex-col gap-6 md:flex-row">
             <div className="px-6 pt-8 flex flex-col gap-3 lg:gap-8">
               <h3 className="text-xl md:text-3xl-l">
@@ -134,7 +134,7 @@ function App() {
           </div>
         </Card>
 
-        <Card bg=" bg-coral-50 md:col-span-2 md:max-h-[35rem] overflow-hidden">
+        <Card bg=" bg-coral-50 md:col-span-3 md:max-h-[35rem] overflow-hidden">
           <div className="flex flex-col gap-6">
             <div className="px-6 pt-8 flex flex-col gap-3">
               <h3 className="text-xl md:text-3xl-l">Analytics</h3>
@@ -148,7 +148,7 @@ function App() {
           </div>
         </Card>
 
-        <Card bg=" bg-yellow-50 md:max-h-[35rem]">
+        <Card bg=" bg-yellow-50 md:col-span-2 md:max-h-[35rem]">
           <div className="flex flex-col gap-6 md:justify-between md:h-full">
             <div className="px-6 pt-8 flex flex-col gap-3 md:flex-grow">
               <h3 className="text-xl md:text-3xl-l">Set daily goals</h3>
@@ -171,7 +171,7 @@ function App() {
         </p>
       </div>
 
-      <section className="flex flex-col gap-20">
+      <section className="flex flex-col gap-20 md:px-14">
         <TeamMembers type={"Designer"} />
         <TeamMembers type={"Developer"} />
       </section>
