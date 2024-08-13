@@ -28,7 +28,7 @@ const ProfileCard = ({ member }) => {
       initial="hidden"
       whileInView="visible"
       variants={cardVariants}
-      viewport={{ margin: "-200px", once: true }}
+      viewport={{ amount: 0.3, once: true }}
     >
       <img src={member.img} alt="member image" />
       <p className="pt-6 pb-1 text-m notranslate">{member.name}</p>
