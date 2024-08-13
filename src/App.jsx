@@ -1,7 +1,7 @@
 import routes from "./routes";
+import { motion } from "framer-motion";
 
 // Components
-import Card from "./components/ui/Card";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
@@ -17,10 +17,61 @@ import DailyGoalsImage from "./assets/images/body/Set daily goals.png";
 import CheckCircle from "./assets/images/icons/CheckCircle.svg";
 import W from "./assets/images/body/W.svg";
 
+const cardVariants = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.2,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+};
+
+const imageVariants = {
+  hidden: {
+    opacity: 0,
+    y: 140,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: "easeIn",
+      duration: 0.3,
+    },
+  },
+};
+
+const textVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      ease: "easeIn",
+      duration: 0.3,
+    },
+  },
+};
+
 function App() {
   return (
     <div className="p-4 lg:max-w-[87rem] lg:mx-auto">
-      <section id="About" className="relative">
+      <motion.section
+        id="About"
+        className="relative overflow-hidden"
+        initial="hidden"
+        whileInView="visible"
+        variants={cardVariants}
+        viewport={{ amount: "all", once: true }}
+      >
         <div className="rounded absolute inset-0 -z-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-yellow-100 to-yellow-200 h-full w-full"></div>
         </div>
@@ -29,9 +80,12 @@ function App() {
           <img src={W} aria-hidden="true" className="lg:max-w-[57rem]" />
         </div>
 
-        <div className="relative z-30 lg:px-12 lg:pt-12">
+        <motion.div className="relative z-30 lg:px-12 lg:pt-12">
           <Nav />
-          <div className="flex flex-col gap-6 lg:absolute lg:inset-x-0 z-30">
+          <motion.div
+            className="flex flex-col gap-6 lg:absolute lg:inset-x-0 z-30"
+            variants={textVariants}
+          >
             <div className="p-2 text-center flex flex-col gap-3 lg:max-w-[46%] lg:mx-auto">
               <h1 className="text-3xl lg:text-4xl">
                 Transform Your Posture with WeaUp
@@ -55,58 +109,106 @@ function App() {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
 
-          <img
+          <motion.img
             src={HeroImageMobile}
             aria-hidden="true"
             className="block lg:hidden px-3 pt-2 z-20 relative"
+            variants={imageVariants}
           />
 
-          <img
+          <motion.img
             src={HeroImageDesktop}
             aria-hidden="true"
             className="hidden lg:block px-3 pt-24 z-20 relative"
+            variants={imageVariants}
           />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <div id="Features">
-        <h2 className="text-2xl px-4 pt-16 pb-12 text-center lg:text-2xl-l lg:pt-28 lg:pb-20">
+      <motion.div
+        id="Features"
+        initial="hidden"
+        whileInView="visible"
+        variants={cardVariants}
+        viewport={{ amount: "all", once: true }}
+      >
+        <motion.h2
+          className="text-2xl px-4 pt-16 pb-12 text-center lg:text-2xl-l lg:pt-28 lg:pb-20"
+          variants={textVariants}
+        >
           Discover WeaUp&apos;s Unique Features
-        </h2>
-      </div>
+        </motion.h2>
+      </motion.div>
 
       <section className="grid gap-10 lg:grid-cols-5 lg:px-14">
-        <Card bg="bg-yellow-50 lg:col-span-2 lg:max-h-[35rem]">
-          <div className="flex flex-col gap-6 lg:justify-between lg:h-full lg:pt-4 lg:px-6">
-            <div className="px-6 pt-8 flex flex-col gap-3 lg:flex-grow">
+        <motion.div
+          className="bg-yellow-50 lg:col-span-2 lg:max-h-[35rem] rounded"
+          initial="hidden"
+          whileInView="visible"
+          variants={cardVariants}
+          viewport={{ margin: "-300px", once: true }}
+        >
+          <motion.div className="flex flex-col gap-6 lg:justify-between lg:h-full lg:pt-4 lg:px-6 overflow-hidden">
+            <motion.div
+              className="px-6 pt-8 flex flex-col gap-3 lg:flex-grow"
+              variants={textVariants}
+            >
               <h3 className="text-xl lg:text-3xl-l">Meet the cute weasel</h3>
               <p className="text-sm px-1 lg:text-base text-neutral-500">
                 Have fun keeping your neck in good posture with Weabo who reacts
                 in real-time depending on your neck posture.
               </p>
-            </div>
-            <img src={WeaselImage} aria-hidden="true" className="px-3" />
-          </div>
-        </Card>
+            </motion.div>
+            <motion.img
+              src={WeaselImage}
+              aria-hidden="true"
+              className="px-3"
+              variants={imageVariants}
+            />
+          </motion.div>
+        </motion.div>
 
-        <Card bg=" bg-coral-50 lg:col-span-3 lg:max-h-[35rem] overflow-hidden">
+        <motion.div
+          className="rounded bg-coral-50 lg:col-span-3 lg:max-h-[35rem] overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          variants={cardVariants}
+          viewport={{ margin: "-300px", once: true }}
+        >
           <div className="flex flex-col gap-6 lg:justify-between lg:h-full lg:pt-4 lg:px-6">
-            <div className="px-6 pt-8 flex flex-col gap-3 lg:flex-grow">
+            <motion.div
+              className="px-6 pt-8 flex flex-col gap-3 lg:flex-grow"
+              variants={textVariants}
+            >
               <h3 className="text-xl lg:text-3xl-l">Challenge Your Friends!</h3>
               <p className="text-sm px-1 lg:text-base text-neutral-500">
                 Set common goals with your friends, compete in challenges, and
                 support each other in achieving better posture.
               </p>
-            </div>
-            <img src={ChallengeImage} aria-hidden="true" className="px-3" />
+            </motion.div>
+            <motion.img
+              src={ChallengeImage}
+              aria-hidden="true"
+              className="px-3"
+              variants={imageVariants}
+            />
           </div>
-        </Card>
+        </motion.div>
 
-        <Card bg="bg-baltic-green-50 lg:col-span-5 lg:max-h-[35rem]">
+        <motion.div
+          className="rounded bg-baltic-green-50 lg:col-span-5 lg:max-h-[35rem] overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          variants={cardVariants}
+          viewport={{ margin: "-300px", once: true }}
+        >
           <div className="flex flex-col gap-6 lg:flex-row lg:pt-20 lg:px-10">
-            <div className="px-6 pt-8 flex flex-col gap-3 lg:gap-8">
+            <motion.div
+              className="px-6 pt-8 flex flex-col gap-3 lg:gap-8"
+              variants={textVariants}
+            >
               <h3 className="text-xl lg:text-3xl-l">
                 Make Posture Improvement Fun and Rewarding
               </h3>
@@ -145,31 +247,52 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <img
+            <motion.img
               src={FunImage}
               aria-hidden="true"
               className="px-3 lg:max-w-[36.82556rem] lg:pr-12"
+              variants={imageVariants}
             />
           </div>
-        </Card>
+        </motion.div>
 
-        <Card bg=" bg-coral-50 lg:col-span-3 lg:max-h-[35rem] overflow-hidden">
+        <motion.div
+          className="rounded bg-coral-50 lg:col-span-3 lg:max-h-[35rem] overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          variants={cardVariants}
+          viewport={{ margin: "-300px", once: true }}
+        >
           <div className="flex flex-col gap-6 lg:pt-4 lg:px-6">
-            <div className="px-6 pt-8 flex flex-col gap-3">
+            <motion.div
+              className="px-6 pt-8 flex flex-col gap-3"
+              variants={textVariants}
+            >
               <h3 className="text-xl lg:text-3xl-l">Analytics</h3>
               <p className="text-sm px-1 lg:text-base text-neutral-500">
                 Gain insights into your posture habits over time. Track your
                 progress, understand trends, and make informed adjustments to
                 achieve your posture goals effectively.
               </p>
-            </div>
-            <img src={AnalyticsImage} aria-hidden="true" className="px-3" />
+            </motion.div>
+            <motion.img
+              src={AnalyticsImage}
+              aria-hidden="true"
+              className="px-3"
+              variants={imageVariants}
+            />
           </div>
-        </Card>
+        </motion.div>
 
-        <Card bg=" bg-yellow-50 lg:col-span-2 lg:max-h-[35rem]">
+        <motion.div
+          className="rounded bg-yellow-50 lg:col-span-2 lg:max-h-[35rem] overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          variants={cardVariants}
+          viewport={{ margin: "-300px", once: true }}
+        >
           <div className="flex flex-col gap-6 lg:justify-between lg:h-full lg:pt-4 lg:px-6">
             <div className="px-6 pt-8 flex flex-col gap-3 lg:flex-grow">
               <h3 className="text-xl lg:text-3xl-l">Set daily goals</h3>
@@ -178,19 +301,31 @@ function App() {
                 posture habits each day.
               </p>
             </div>
-            <img src={DailyGoalsImage} aria-hidden="true" className="px-3" />
+            <motion.img
+              src={DailyGoalsImage}
+              aria-hidden="true"
+              className="px-3"
+              variants={imageVariants}
+            />
           </div>
-        </Card>
+        </motion.div>
       </section>
 
-      <div className="px-4 py-[5.5rem] text-center lg:pt-48 lg:pb-16" id="Team">
+      <motion.div
+        className="px-4 py-[5.5rem] text-center lg:pt-48 lg:pb-16"
+        id="Team"
+        initial="hidden"
+        whileInView="visible"
+        variants={cardVariants}
+        viewport={{ amount: "all", once: true }}
+      >
         <h2 className="text-2xl lg:text-2xl-l lg:pb-4">
           The team behind WeaUp
         </h2>
         <p className="text-sm px-1 lg:text-base text-neutral-500">
           Meet the team that brought WeaUp to life
         </p>
-      </div>
+      </motion.div>
 
       <section className="flex flex-col gap-20 lg:px-14">
         <TeamMembers type={"Designer"} />
