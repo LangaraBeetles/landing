@@ -5,7 +5,12 @@ export default {
     colors: {
       white: "#FFFFFF",
       yellow: { 50: "#FFF8E6", 100: "#FDD462", 200: "#FFCD43" },
-      neutral: { 100: "#E7E5E4", 500: "#5F5C56", 800: "#201F1D" },
+      neutral: {
+        100: "#E7E5E4",
+        500: "#5F5C56",
+        600: "#4B4944",
+        800: "#201F1D",
+      },
       coral: { 50: "#FFF0F0" },
       "baltic-green": {
         50: "#F0F9F9",
