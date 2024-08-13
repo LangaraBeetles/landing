@@ -4,7 +4,7 @@ import routes from "../routes";
 
 const Footer = () => {
   return (
-    <Card bg="bg-neutral-800" rounded="rounded-lg" p="px-16 py-12 mt-48">
+    <Card bg="bg-neutral-800" rounded="rounded-lg" p="px-16 py-12 mt-[5.5rem] lg:mt-48">
       <div className="flex justify-center">
         <img src={FooterLogo} alt="WeaUp logo" className="md:w-[5.25rem]" />
       </div>

@@ -1,4 +1,3 @@
-import "./App.css";
 import routes from "./routes";
 
 // Components
@@ -184,7 +183,7 @@ function App() {
         </Card>
       </section>
 
-      <div className="px-4 py-[5.5rem] text-center lg:pt-28 lg:pb-16" id="Team">
+      <div className="px-4 py-[5.5rem] text-center lg:pt-48 lg:pb-16" id="Team">
         <h2 className="text-2xl lg:text-2xl-l lg:pb-4">
           The team behind WeaUp
         </h2>
