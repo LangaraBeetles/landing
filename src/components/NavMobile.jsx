@@ -34,43 +34,26 @@ export const NavMobile = () => {
             >
               <Card bg="bg-white" p="p-3.5 pt-[1.56rem]">
                 <ul className="grid gap-6">
-                  {routes.map((route, idx) => {
-                    const isLastItem = idx === routes.length - 1;
+                  {routes.slice(0, 3).map((route, idx) => {
                     return (
-                      <>
-                        {isLastItem && (
-                          <motion.li
-                            initial={{ scale: 0, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 260,
-                              damping: 20,
-                              delay: 0.1 + idx / 10,
-                            }}
-                          >
-                            <div className="border-t border-neutral-100"></div>
-                          </motion.li>
-                        )}
-                        <motion.li
-                          initial={{ scale: 0, opacity: 0 }}
-                          animate={{ scale: 1, opacity: 1 }}
-                          transition={{
-                            type: "spring",
-                            stiffness: 260,
-                            damping: 20,
-                            delay: 0.1 + idx / 10,
-                          }}
-                          key={route.title}
-                          className="active:bg-baltic-green-200 active:text-baltic-green-800 rounded-xl w-full px-3 py-2 last:bg-baltic-green-600 last:text-white"
-                        >
-                          <a onClick={handleClick} href={route.href}>
-                            <span className="flex justify-center gap-6 text-m">
-                              {route.title}
-                            </span>
-                          </a>
-                        </motion.li>
-                      </>
+                      <motion.li
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 260,
+                          damping: 20,
+                          delay: 0.1 + idx / 10,
+                        }}
+                        key={route.title}
+                        className="active:bg-baltic-green-200 active:text-baltic-green-800 rounded-xl w-full px-3 py-2 "
+                      >
+                        <a onClick={handleClick} href={route.href}>
+                          <span className="flex justify-center gap-6 text-m">
+                            {route.title}
+                          </span>
+                        </a>
+                      </motion.li>
                     );
                   })}
                 </ul>

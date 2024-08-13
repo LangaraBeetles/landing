@@ -59,6 +59,14 @@ export default {
             fontFamily: "Nunito",
           },
         ],
+        "m-l": [
+          "1.25rem",
+          {
+            lineHeight: "1.75rem",
+            fontWeight: "500",
+            fontFamily: "Nunito",
+          },
+        ],
         xl: [
           "1.5rem",
           {
