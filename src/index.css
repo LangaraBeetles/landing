@@ -26,5 +26,6 @@
 
   html {
     font-family: "Nunito", sans-serif;
+    @apply text-neutral-800;
   }
 }
