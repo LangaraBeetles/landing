@@ -148,7 +148,7 @@ function App() {
           initial="hidden"
           whileInView="visible"
           variants={cardVariants}
-          viewport={{ margin: "-200px", once: true }}
+          viewport={{ amount: 0.3, once: true }}
         >
           <motion.div className="flex flex-col gap-6 lg:justify-between lg:h-full lg:pt-4 lg:px-6 overflow-hidden">
             <motion.div
@@ -175,7 +175,7 @@ function App() {
           initial="hidden"
           whileInView="visible"
           variants={cardVariants}
-          viewport={{ margin: "-200px", once: true }}
+          viewport={{ amount: 0.3, once: true }}
         >
           <div className="flex flex-col gap-6 lg:justify-between lg:h-full lg:pt-4 lg:px-6">
             <motion.div
@@ -202,7 +202,7 @@ function App() {
           initial="hidden"
           whileInView="visible"
           variants={cardVariants}
-          viewport={{ margin: "-200px", once: true }}
+          viewport={{ amount: 0.3, once: true }}
         >
           <div className="flex flex-col gap-6 lg:flex-row lg:pt-20 lg:px-10">
             <motion.div
@@ -263,7 +263,7 @@ function App() {
           initial="hidden"
           whileInView="visible"
           variants={cardVariants}
-          viewport={{ margin: "-200px", once: true }}
+          viewport={{ amount: 0.3, once: true }}
         >
           <div className="flex flex-col gap-6 lg:pt-4 lg:px-6">
             <motion.div
@@ -291,7 +291,7 @@ function App() {
           initial="hidden"
           whileInView="visible"
           variants={cardVariants}
-          viewport={{ margin: "-200px", once: true }}
+          viewport={{ amount: 0.3, once: true }}
         >
           <div className="flex flex-col gap-6 lg:justify-between lg:h-full lg:pt-4 lg:px-6">
             <div className="px-6 pt-8 flex flex-col gap-3 lg:flex-grow">
@@ -317,7 +317,7 @@ function App() {
         initial="hidden"
         whileInView="visible"
         variants={cardVariants}
-        viewport={{ amount: "all", once: true }}
+        viewport={{ amount: 0.3, once: true }}
       >
         <h2 className="text-2xl lg:text-2xl-l lg:pb-4">
           The team behind WeaUp
